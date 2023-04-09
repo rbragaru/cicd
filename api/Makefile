@@ -1,5 +1,5 @@
 appname = apiapp
-version = 1.0
+version = latest
 account = $(shell aws sts get-caller-identity --query 'Account' --output text)
 
 
