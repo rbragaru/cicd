@@ -42,6 +42,11 @@ pipeline {
           make push
           make deploy
           popd
+          pushd web/
+          make build
+          make push
+          make deploy
+          popd
           '''
         }
       }
