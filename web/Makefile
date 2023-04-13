@@ -3,7 +3,7 @@ version = 1.0
 account = $(shell aws sts get-caller-identity --query 'Account' --output text)
 
 
-stage = dev
+stage = prod
 include configs/$(stage)
 
 
