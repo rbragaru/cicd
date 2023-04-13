@@ -37,16 +37,7 @@ pipeline {
       steps {
         container('jenkins-agent-container') {
           sh '''#!/bin/bash
-          pushd api/
-          make build
-          make push
-          make deploy
-          popd
-          pushd web/
-          make build
-          make push
-          make deploy
-          popd
+          ./deploy.sh
           '''
         }
       }
