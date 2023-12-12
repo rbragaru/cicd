@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # BRANCH_NAME is a default variable set by Jenkins
-#    on Jenkins agents it's equal to the branch that's being built
+#    on Jenkins agents it's equal to the branch that's being built2322
 
 # -e option will make sure that script stops on first error
 # -x option will show you everything that script is running to the output, helpful for troubleshooting
